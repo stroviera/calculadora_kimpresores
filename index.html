@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Etiquetas | K Impresores</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <!-- CAMBIA EL LOGO SI QUIERES -->
+    <img src="logo.png" alt="K Impresores" class="logo">
+
+    <h1>Calculadora de Etiquetas Autoadhesivas</h1>
+    <p>Calcula cuántas etiquetas podemos producir por metro cuadrado según tus medidas.</p>
+  </header>
+
+  <main class="card">
+    <div class="inputs">
+      <input type="number" id="alto" placeholder="Alto de la etiqueta (cm)" step="0.1">
+      <input type="number" id="ancho" placeholder="Ancho de la etiqueta (cm)" step="0.1">
+    </div>
+
+    <button id="calcular">Calcular</button>
+
+    <div class="resultado" id="resultado">
+      Ingresa las medidas para ver el resultado
+    </div>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+  </main>
+
+  <footer class="footer">
+    <p>
+      ¿Quieres cotizar este tamaño?
+      <strong>Contáctanos</strong>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
